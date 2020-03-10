@@ -11,7 +11,7 @@ const products = [
     for(const item of allProdcuts){
         if(item.name === productName){
             const result = item.price * item.quantity;
-            console.log(result);
+            return result;
         }
     }
   };

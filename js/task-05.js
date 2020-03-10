@@ -8,9 +8,14 @@ const products = [
   
   const getAllPropValues = function(arr, prop) {
     // твой код
+    const result = [];
     for(const item of arr){
-        console.log(item[prop]);
+        if(item[prop]){
+          result.push(item[prop]);
+        }
+        
     }
+    return result;
   };
   
   /*
