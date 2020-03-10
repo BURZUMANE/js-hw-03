@@ -16,3 +16,14 @@ console.log(user);
 for(const elem of Object.keys(user)){
    console.log(`${elem} : ${user[elem]}`);
 }
+'use strict'
+const printMessage = function(message) {
+    console.log(message);
+  };
+
+  const higherOrderFunction = function(fokume) {
+    const string = 'HOCs are awesome';
+    fokume(string);
+  };
+
+  higherOrderFunction(printMessage);
