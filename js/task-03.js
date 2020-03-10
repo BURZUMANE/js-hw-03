@@ -3,10 +3,9 @@ const findBestEmployee = function(employees) {
     // твой код
     const values = (Object.values(employees));
     const max = Math.max(...values); //
-    console.log
     for (const key in employees) {
         if(employees[key] === max){
-            console.log(key);
+            return key;
         }
       }
   };

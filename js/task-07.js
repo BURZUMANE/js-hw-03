@@ -87,13 +87,12 @@ const Transaction = {
     },
   };
 
-account.deposit(100)
-account.withdraw(200)
-//   account.createTransaction(500,'deposit');
-//   account.createTransaction(300,'withdraw');
-//   account.createTransaction(500,'deposit');
-//   account.createTransaction(100,'withdraw');
-//   account.createTransaction(700,'deposit');
+
+  account.createTransaction(500,'deposit');
+  account.createTransaction(300,'withdraw');
+  account.createTransaction(500,'deposit');
+  account.createTransaction(100,'withdraw');
+  account.createTransaction(700,'deposit');
   console.log(account.balance);
   console.table(account.transactions);
   account.getBalance();
